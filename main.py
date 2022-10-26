@@ -1,20 +1,15 @@
-# Meu primeiro projeto Python!!!
-#
-# print() = comando de saida
-print("Olá mundo!")
+#Comando input(): quero permitir que 
+#O usuário digite algo...
 
+nome = input("Digite seu nome: ")
+idade = int(input("Agora informe sua idade: "))
 
-# Quando quiser guardar uma String!
-nome = "Bruno Costa"
-idade = 24
+#Comando de saída...
 
-#Exibir meu nome atribuido a variável nome!
-print("Meu nome é", nome)
+print("Seu nome é {} e você tem {} anos!".format(nome,idade))
 
-#Exibir idade atribuida a variavel idade!
-print("Tenho", idade, "anos!")
-print(f"Tenho {idade} anos!\n")
-
-#Quando quiser exibir "Meu nomé ... e tenho .. anos..." trocando pelas variáveis!
-print("Meu nome é {} e tenho {} anos!".format(nome, idade))
-
+#Mostrando o dobro da idade e ano de nascimento
+ano = 2022
+dobro = idade*2
+nascimento = ano-idade
+print("O dobro da sua idade é {}, seu ano de nascimento é {}".format(dobro,nascimento))
