@@ -19,6 +19,19 @@ def calcular_imposto(preco_produto):
 #aqui é o uso da função, calculando e exibir na tela
 preco = 1000
 imposto = calcular_imposto(preco)
-print(imposto)
+print(imposto,'\n\n')
 
 #agora calcular imposto a aliquota agora é 7%
+
+valores = [1.99, 24.50, 78.27, 1515.5]
+#Calculando o imposto deste quatro valores e exibindo
+for valor in valores:
+  print(f"O imposto de {valor} é {calcular_imposto(valor)}")
+
+#declarando uma função com dois valores, caso o valor do juros não seja informada, defina 7% como padrão
+def calcular_imposto_aliquota(valor, aliquota=7):
+  imposto = valor * aliquota / 100
+  return imposto
+print("\n\n\n")
+for valor in valores:
+  print(f"O imposto de {valor} é {calcular_imposto_aliquota(valor, 10)}")
