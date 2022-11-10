@@ -31,5 +31,8 @@ while(i<=3):
   i += 1
 else: i = 0
   
-for i in frutas:
-  print(frutas[i])
+print('\n')
+
+#exemplo com for
+for fruta in frutas:
+  print(fruta)
